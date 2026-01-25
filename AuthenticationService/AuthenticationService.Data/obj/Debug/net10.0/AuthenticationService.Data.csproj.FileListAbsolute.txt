@@ -1,0 +1,16 @@
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\bin\Debug\net10.0\AuthenticationService.Data.deps.json
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\bin\Debug\net10.0\AuthenticationService.Data.dll
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\bin\Debug\net10.0\AuthenticationService.Data.pdb
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\bin\Debug\net10.0\AuthenticationService.Domain.dll
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\bin\Debug\net10.0\AuthenticationService.Domain.pdb
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\obj\Debug\net10.0\AuthenticationService.Data.csproj.AssemblyReference.cache
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\obj\Debug\net10.0\AuthenticationService.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\obj\Debug\net10.0\AuthenticationService.Data.AssemblyInfoInputs.cache
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\obj\Debug\net10.0\AuthenticationService.Data.AssemblyInfo.cs
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\obj\Debug\net10.0\AuthenticationService.Data.csproj.CoreCompileInputs.cache
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\obj\Debug\net10.0\AuthenticationService.Data.sourcelink.json
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\obj\Debug\net10.0\Authenti.4AD7E1A8.Up2Date
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\obj\Debug\net10.0\AuthenticationService.Data.dll
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\obj\Debug\net10.0\refint\AuthenticationService.Data.dll
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\obj\Debug\net10.0\AuthenticationService.Data.pdb
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationService\AuthenticationService.Data\obj\Debug\net10.0\ref\AuthenticationService.Data.dll
