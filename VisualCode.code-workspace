@@ -1,0 +1,29 @@
+{
+  "folders": [
+    {
+      "name": "01 - WebApi",
+      "path": "./AuthenticationApp.WebApi"
+    },
+    {
+      "name": "02 - Application",
+      "path": "./AuthenticationApp.Application"
+    },
+    {
+      "name": "03 - Domain",
+      "path": "./AuthenticationApp.Domain"
+    },
+    {
+      "name": "04 - Infrastructure",
+      "path": "./AuthenticationApp.Infrastructure"
+    },
+    {
+      "name": "05 - SharedKernel",
+      "path": "./AuthenticationApp.SharedKernel"
+    }
+    {
+      "name": "AuthenticationApp",
+      "path": "./"
+    }
+  ],
+  "settings": {}
+}

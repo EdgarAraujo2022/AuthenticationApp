@@ -1,8 +1,7 @@
 <Solution>
-  <Project Path="AuthenticationService.Data/AuthenticationService.Data.csproj" />
-  <Project Path="AuthenticationService.Domain/AuthenticationService.Domain.csproj" />
-  <Project Path="AuthenticationService.Services/AuthenticationService.Services.csproj" />
-  <Project Path="AuthenticationService.WebApi/AuthenticationService.WebApi.csproj" />
-  <Project Path="AutAuthenticationServicehService/AuthenticationService.csproj" />
-  <Project Path="Bff/Bff.csproj" />
+  <Project Path="AuthenticationApp.Application/AuthenticationApp.Application.csproj" />
+  <Project Path="AuthenticationApp.Domain/AuthenticationApp.Domain.csproj" />
+  <Project Path="AuthenticationApp.Infrastructure/AuthenticationApp.Infrastructure.csproj" />
+  <Project Path="AuthenticationApp.SharedKernel/AuthenticationApp.SharedKernel.csproj" />
+  <Project Path="AuthenticationApp.WebApi/AuthenticationApp.WebApi.csproj" />
 </Solution>
