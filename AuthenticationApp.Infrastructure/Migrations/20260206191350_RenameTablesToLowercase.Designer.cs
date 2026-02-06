@@ -3,6 +3,7 @@ using System;
 using AuthenticationApp.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace AuthenticationApp.Infrastructure.Migrations
 {
     [DbContext(typeof(AuthenticationDbContext))]
-    partial class AuthenticationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260206191350_RenameTablesToLowercase")]
+    partial class RenameTablesToLowercase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,29 +29,22 @@ namespace AuthenticationApp.Infrastructure.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasDefaultValueSql("gen_random_uuid()");
+                        .HasColumnType("uuid");
 
                     b.Property<string>("ClientId")
                         .IsRequired()
                         .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("client_id");
+                        .HasColumnType("character varying(100)");
 
                     b.Property<string>("ClientSecret")
                         .IsRequired()
                         .HasMaxLength(255)
-                        .HasColumnType("character varying(255)")
-                        .HasColumnName("client_secret");
+                        .HasColumnType("character varying(255)");
 
                     b.Property<bool>("IsActive")
-                        .HasColumnType("boolean")
-                        .HasColumnName("is_active");
+                        .HasColumnType("boolean");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ClientId")
-                        .IsUnique();
 
                     b.ToTable("clients", "auth");
                 });
@@ -57,28 +53,21 @@ namespace AuthenticationApp.Infrastructure.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasDefaultValueSql("gen_random_uuid()");
-
-                    b.Property<Guid>("ClientId")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid?>("ClientId1")
+                    b.Property<Guid>("ClientId")
                         .HasColumnType("uuid");
 
                     b.Property<string>("Scope")
                         .IsRequired()
                         .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("scope");
+                        .HasColumnType("character varying(100)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ClientId");
 
-                    b.HasIndex("ClientId1");
-
-                    b.ToTable("client_scopes", "auth");
+                    b.ToTable("clientScopes", "auth");
                 });
 
             modelBuilder.Entity("AuthenticationApp.Domain.Entities.RefreshToken", b =>
@@ -88,8 +77,7 @@ namespace AuthenticationApp.Infrastructure.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<Guid>("ClientId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("client_id");
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("ExpiresAt")
                         .HasColumnType("timestamp with time zone");
@@ -99,15 +87,12 @@ namespace AuthenticationApp.Infrastructure.Migrations
 
                     b.Property<string>("Token")
                         .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("token");
+                        .HasColumnType("text");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uuid");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ClientId");
 
                     b.ToTable("RefreshTokens");
                 });
@@ -116,14 +101,10 @@ namespace AuthenticationApp.Infrastructure.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasDefaultValueSql("gen_random_uuid()");
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("created_at")
-                        .HasDefaultValueSql("now()");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Role")
                         .IsRequired()
@@ -132,8 +113,7 @@ namespace AuthenticationApp.Infrastructure.Migrations
                     b.Property<string>("Username")
                         .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("user_name");
+                        .HasColumnType("character varying(50)");
 
                     b.HasKey("Id");
 
@@ -142,28 +122,11 @@ namespace AuthenticationApp.Infrastructure.Migrations
 
             modelBuilder.Entity("AuthenticationApp.Domain.Entities.ClientScope", b =>
                 {
-                    b.HasOne("AuthenticationApp.Domain.Entities.Client", "Client")
-                        .WithMany("ClientScopes")
-                        .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("AuthenticationApp.Domain.Entities.Client", null)
                         .WithMany("Scopes")
-                        .HasForeignKey("ClientId1");
-
-                    b.Navigation("Client");
-                });
-
-            modelBuilder.Entity("AuthenticationApp.Domain.Entities.RefreshToken", b =>
-                {
-                    b.HasOne("AuthenticationApp.Domain.Entities.Client", "Client")
-                        .WithMany("RefreshTokens")
                         .HasForeignKey("ClientId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Client");
                 });
 
             modelBuilder.Entity("AuthenticationApp.Domain.Entities.User", b =>
@@ -171,7 +134,6 @@ namespace AuthenticationApp.Infrastructure.Migrations
                     b.OwnsOne("AuthenticationApp.Domain.ValueObjects.Email", "Email", b1 =>
                         {
                             b1.Property<Guid>("UserId")
-                                .ValueGeneratedOnAdd()
                                 .HasColumnType("uuid");
 
                             b1.Property<string>("Value")
@@ -191,13 +153,12 @@ namespace AuthenticationApp.Infrastructure.Migrations
                     b.OwnsOne("AuthenticationApp.Domain.ValueObjects.Password", "Password", b1 =>
                         {
                             b1.Property<Guid>("UserId")
-                                .ValueGeneratedOnAdd()
                                 .HasColumnType("uuid");
 
                             b1.Property<string>("Hash")
                                 .IsRequired()
                                 .HasColumnType("text")
-                                .HasColumnName("password_hash");
+                                .HasColumnName("PasswordHash");
 
                             b1.HasKey("UserId");
 
@@ -216,10 +177,6 @@ namespace AuthenticationApp.Infrastructure.Migrations
 
             modelBuilder.Entity("AuthenticationApp.Domain.Entities.Client", b =>
                 {
-                    b.Navigation("ClientScopes");
-
-                    b.Navigation("RefreshTokens");
-
                     b.Navigation("Scopes");
                 });
 #pragma warning restore 612, 618

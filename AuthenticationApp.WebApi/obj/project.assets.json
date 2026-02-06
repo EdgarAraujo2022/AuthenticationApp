@@ -3946,19 +3946,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/edgar/.nuget/packages/": {}
+    "C:\\Users\\edgar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.WebApi/AuthenticationApp.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\edgar\\Documents\\Git\\AuthenticationApp\\AuthenticationApp.WebApi\\AuthenticationApp.WebApi.csproj",
       "projectName": "AuthenticationApp.WebApi",
-      "projectPath": "/Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.WebApi/AuthenticationApp.WebApi.csproj",
-      "packagesPath": "/Users/edgar/.nuget/packages/",
-      "outputPath": "/Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.WebApi/obj/",
+      "projectPath": "C:\\Users\\edgar\\Documents\\Git\\AuthenticationApp\\AuthenticationApp.WebApi\\AuthenticationApp.WebApi.csproj",
+      "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\edgar\\Documents\\Git\\AuthenticationApp\\AuthenticationApp.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/edgar/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -3970,11 +3970,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "/Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.Application/AuthenticationApp.Application.csproj": {
-              "projectPath": "/Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.Application/AuthenticationApp.Application.csproj"
+            "C:\\Users\\edgar\\Documents\\Git\\AuthenticationApp\\AuthenticationApp.Application\\AuthenticationApp.Application.csproj": {
+              "projectPath": "C:\\Users\\edgar\\Documents\\Git\\AuthenticationApp\\AuthenticationApp.Application\\AuthenticationApp.Application.csproj"
             },
-            "/Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.Infrastructure/AuthenticationApp.Infrastructure.csproj": {
-              "projectPath": "/Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.Infrastructure/AuthenticationApp.Infrastructure.csproj"
+            "C:\\Users\\edgar\\Documents\\Git\\AuthenticationApp\\AuthenticationApp.Infrastructure\\AuthenticationApp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\edgar\\Documents\\Git\\AuthenticationApp\\AuthenticationApp.Infrastructure\\AuthenticationApp.Infrastructure.csproj"
             }
           }
         }
@@ -4037,7 +4037,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

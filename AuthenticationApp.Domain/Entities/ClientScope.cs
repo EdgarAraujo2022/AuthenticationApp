@@ -6,6 +6,7 @@ public class ClientScope
     public Guid Id { get; private set; }
     public Guid ClientId { get; private set; } = default!;
     public string Scope { get; private set; } = default!;
+    public Client Client { get; set; } = null!;
 
     protected ClientScope() { }
 

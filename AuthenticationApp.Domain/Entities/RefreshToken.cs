@@ -10,6 +10,7 @@ namespace AuthenticationApp.Domain.Entities
         public DateTime ExpiresAt { get; private set; }
         public DateTime? RevokedAt { get; private set; }
         public Guid UserId { get; private set; }
+        public Client Client { get; set; } = null!;
 
         private RefreshToken() { }
 

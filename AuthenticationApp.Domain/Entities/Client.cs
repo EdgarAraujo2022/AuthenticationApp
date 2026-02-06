@@ -6,7 +6,9 @@ public class Client
     public string ClientId { get; private set; } = default!;
     public string ClientSecret { get; private set; } = default!;
     public bool IsActive { get; private set; } 
-
+    public ICollection<ClientScope> ClientScopes { get; set; } = new List<ClientScope>();
+    public ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
+    
     private readonly List<ClientScope> _scopes = [];
     public IReadOnlyCollection<ClientScope> Scopes => _scopes;
 

@@ -2171,19 +2171,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/edgar/.nuget/packages/": {}
+    "C:\\Users\\edgar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.Infrastructure/AuthenticationApp.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\edgar\\Documents\\Git\\AuthenticationApp\\AuthenticationApp.Infrastructure\\AuthenticationApp.Infrastructure.csproj",
       "projectName": "AuthenticationApp.Infrastructure",
-      "projectPath": "/Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.Infrastructure/AuthenticationApp.Infrastructure.csproj",
-      "packagesPath": "/Users/edgar/.nuget/packages/",
-      "outputPath": "/Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.Infrastructure/obj/",
+      "projectPath": "C:\\Users\\edgar\\Documents\\Git\\AuthenticationApp\\AuthenticationApp.Infrastructure\\AuthenticationApp.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\edgar\\Documents\\Git\\AuthenticationApp\\AuthenticationApp.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/edgar/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -2195,8 +2195,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "/Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.Domain/AuthenticationApp.Domain.csproj": {
-              "projectPath": "/Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.Domain/AuthenticationApp.Domain.csproj"
+            "C:\\Users\\edgar\\Documents\\Git\\AuthenticationApp\\AuthenticationApp.Domain\\AuthenticationApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\edgar\\Documents\\Git\\AuthenticationApp\\AuthenticationApp.Domain\\AuthenticationApp.Domain.csproj"
             }
           }
         }
@@ -2254,7 +2254,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

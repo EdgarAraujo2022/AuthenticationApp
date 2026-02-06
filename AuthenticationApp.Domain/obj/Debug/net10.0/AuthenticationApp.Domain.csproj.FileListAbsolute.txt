@@ -10,3 +10,15 @@
 /Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.Domain/obj/Debug/net10.0/refint/AuthenticationApp.Domain.dll
 /Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.Domain/obj/Debug/net10.0/AuthenticationApp.Domain.pdb
 /Users/edgar/Documents/GitHub/Projetos/AuthenticationApp/AuthenticationApp.Domain/obj/Debug/net10.0/ref/AuthenticationApp.Domain.dll
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationApp.Domain\bin\Debug\net10.0\AuthenticationApp.Domain.deps.json
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationApp.Domain\bin\Debug\net10.0\AuthenticationApp.Domain.dll
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationApp.Domain\bin\Debug\net10.0\AuthenticationApp.Domain.pdb
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationApp.Domain\obj\Debug\net10.0\AuthenticationApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationApp.Domain\obj\Debug\net10.0\AuthenticationApp.Domain.AssemblyInfoInputs.cache
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationApp.Domain\obj\Debug\net10.0\AuthenticationApp.Domain.AssemblyInfo.cs
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationApp.Domain\obj\Debug\net10.0\AuthenticationApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationApp.Domain\obj\Debug\net10.0\AuthenticationApp.Domain.sourcelink.json
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationApp.Domain\obj\Debug\net10.0\AuthenticationApp.Domain.dll
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationApp.Domain\obj\Debug\net10.0\refint\AuthenticationApp.Domain.dll
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationApp.Domain\obj\Debug\net10.0\AuthenticationApp.Domain.pdb
+C:\Users\edgar\Documents\Git\AuthenticationApp\AuthenticationApp.Domain\obj\Debug\net10.0\ref\AuthenticationApp.Domain.dll
