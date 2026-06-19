@@ -1,0 +1,86 @@
+<div class="auth-container">
+  <div class="auth-card">
+    <div class="auth-header">
+      <h2>Bem-vindo de volta!</h2>
+      <p>Faça login para continuar</p>
+    </div>
+    <div class="backend-message" *ngIf="error">
+      <i class="fas fa-exclamation-circle"></i>
+      <span>{{ error }}</span>
+    </div>
+
+    <form class="auth-form" [formGroup]="form" (ngSubmit)="submit()">
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Digite seu e-mail"
+          formControlName="email"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          formControlName="password"
+          placeholder="Digite sua senha"
+          required
+        />
+      </div>
+
+      <div class="form-options">
+        <label class="checkbox-container">
+          <input type="checkbox" name="remember" />
+          <span>Lembrar-me</span>
+        </label>
+        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+      </div>
+
+      <button type="submit" class="btn-primary" [disabled]="isLoading">
+        <i class="fas fa-spinner fa-spin" *ngIf="isLoading"></i>
+
+        <span *ngIf="!isLoading">Entrar</span>
+        <span *ngIf="isLoading">Entrando...</span>
+      </button>
+    </form>
+
+    <div class="divider">
+      <span>ou</span>
+    </div>
+
+    <div class="social-login">
+      <button class="social-btn google-btn">
+        <i class="fab fa-google"></i>
+        <span>Continuar com Google</span>
+      </button>
+
+      <button class="social-btn facebook-btn">
+        <i class="fab fa-facebook-f"></i>
+        <span>Continuar com Facebook</span>
+      </button>
+
+      <button class="social-btn apple-btn">
+        <i class="fab fa-apple"></i>
+        <span>Continuar com Apple</span>
+      </button>
+
+      <button class="social-btn github-btn">
+        <i class="fab fa-github"></i>
+        <span>Continuar com GitHub</span>
+      </button>
+    </div>
+
+    <div class="auth-footer">
+      <p>
+        Não tem uma conta?
+        <a href="#" class="signup-link">Cadastre-se</a>
+      </p>
+    </div>
+  </div>
+</div>
